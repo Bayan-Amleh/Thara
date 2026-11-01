@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THARA Style Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Shared tokens. In the real pages, load the same file. -->
+<script src="tailwind.config.js"></script>
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Cormorant Garamond', serif; }
+  :focus-visible { outline: 2px solid #b88a2e; outline-offset: 2px; }
+</style>
+</head>
+<body class="bg-cream text-ink text-body">
+
+<!-- Navbar: ONE version for every page -->
+<header class="bg-forest text-cream sticky top-0 z-10">
+  <nav class="max-w-page mx-auto px-6 h-16 flex items-center justify-between gap-6">
+    <a href="#" class="font-display text-2xl font-bold tracking-wide">THARA</a>
+    <ul class="hidden md:flex gap-6 text-small">
+      <li><a href="#" class="hover:text-gold-light">Home</a></li>
+      <li><a href="#" class="hover:text-gold-light">Cities</a></li>
+      <li><a href="#" class="hover:text-gold-light">Plan Your Trip</a></li>
+      <li><a href="#" class="hover:text-gold-light">Shop</a></li>
+      <li><a href="#" class="hover:text-gold-light">About</a></li>
+      <li><a href="#" class="hover:text-gold-light">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="max-w-page mx-auto px-6 py-12 space-y-16">
+
+  <section>
+    <h1 class="font-display text-h1 font-bold text-forest">THARA Style Guide</h1>
+    <p class="mt-3 max-w-prose text-ink-soft">The shared look for every page. If something is not here, agree on it as a team and add it here first.</p>
+  </section>
+
+  <!-- Colors -->
+  <section>
+    <h2 class="font-display text-h2 font-semibold text-forest mb-6">Colors</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div class="rounded-card overflow-hidden shadow-card bg-cream-card"><div class="h-16 bg-forest"></div><p class="p-3 text-small"><b>forest</b><br>#1f3a2d<br><span class="text-ink-soft">Navbar, footer, buttons</span></p></div>
+      <div class="rounded-card overflow-hidden shadow-card bg-cream-card"><div class="h-16 bg-forest-dark"></div><p class="p-3 text-small"><b>forest-dark</b><br>#142619<br><span class="text-ink-soft">Hero overlay, hover</span></p></div>
+      <div class="rounded-card overflow-hidden shadow-card bg-cream-card"><div class="h-16 bg-cream border-b border-cream-line"></div><p class="p-3 text-small"><b>cream</b><br>#efe6d0<br><span class="text-ink-soft">Page background</span></p></div>
+      <div class="rounded-card overflow-hidden shadow-card bg-cream-card"><div class="h-16 bg-cream-card border-b border-cream-line"></div><p class="p-3 text-small"><b>cream-card</b><br>#f7f1e1<br><span class="text-ink-soft">Cards and forms</span></p></div>
+      <div class="rounded-card overflow-hidden shadow-card bg-cream-card"><div class="h-16 bg-gold"></div><p class="p-3 text-small"><b>gold</b><br>#b88a2e<br><span class="text-ink-soft">Accent</span></p></div>
+      <div class="rounded-card overflow-hidden shadow-card bg-cream-card"><div class="h-16 bg-gold-light"></div><p class="p-3 text-small"><b>gold-light</b><br>#e0c27a<br><span class="text-ink-soft">Accent on dark</span></p></div>
+      <div class="rounded-card overflow-hidden shadow-card bg-cream-card"><div class="h-16 bg-ink"></div><p class="p-3 text-small"><b>ink</b><br>#26231c<br><span class="text-ink-soft">Main text</span></p></div>
+      <div class="rounded-card overflow-hidden shadow-card bg-cream-card"><div class="h-16 bg-ink-soft"></div><p class="p-3 text-small"><b>ink-soft</b><br>#6b6454<br><span class="text-ink-soft">Secondary text</span></p></div>
+    </div>
+  </section>
+
+  <!-- Typography -->
+  <section>
+    <h2 class="font-display text-h2 font-semibold text-forest mb-6">Typography</h2>
+    <div class="bg-cream-card rounded-card shadow-card p-6 space-y-4">
+      <p class="text-small text-ink-soft">Headings: Cormorant Garamond. Body: Inter.</p>
+      <p class="font-display text-h1 font-bold text-forest leading-tight">Every City Holds a Story</p>
+      <p class="font-display text-h2 font-semibold text-forest">Unlock the Stories of Palestine</p>
+      <p class="font-display text-h3 font-semibold text-forest">The Soul of Northern Palestine</p>
+      <p class="max-w-prose">Body text. Nablus is a city of history, flavor and tradition, known for its soap, its sweets and its old stone alleys.</p>
+      <p class="text-small text-ink-soft">Small text: captions, prices, notes.</p>
+    </div>
+  </section>
+
+  <!-- Buttons -->
+  <section>
+    <h2 class="font-display text-h2 font-semibold text-forest mb-6">Buttons</h2>
+    <div class="flex flex-wrap gap-4 items-center">
+      <button class="bg-forest text-cream rounded-btn px-6 py-2.5 font-semibold hover:bg-forest-dark transition-colors">Start Exploring</button>
+      <button class="border-2 border-forest text-forest rounded-btn px-6 py-2.5 font-semibold hover:bg-forest hover:text-cream transition-colors">Learn More</button>
+      <button class="bg-gold text-forest-dark rounded-btn px-6 py-2.5 font-semibold hover:bg-gold-light transition-colors">Add to Cart</button>
+      <button class="bg-forest/40 text-cream rounded-btn px-6 py-2.5 font-semibold cursor-not-allowed" disabled>Disabled</button>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section>
+    <h2 class="font-display text-h2 font-semibold text-forest mb-6">Cards</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="bg-cream-card rounded-card shadow-card overflow-hidden">
+        <div class="aspect-[4/3] bg-cream-line"></div>
+        <div class="p-4 space-y-2">
+          <h3 class="font-display text-h3 font-semibold text-forest">Nabulsi Soap</h3>
+          <p class="text-small text-ink-soft">Handmade olive oil soap.</p>
+          <div class="flex items-center justify-between pt-2">
+            <span class="font-semibold">₪40</span>
+            <button class="bg-forest text-cream rounded-btn px-4 py-1.5 text-small hover:bg-forest-dark">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+      <article class="bg-cream-card rounded-card shadow-card overflow-hidden">
+        <div class="aspect-[4/3] bg-forest-light"></div>
+        <div class="p-4 space-y-2">
+          <h3 class="font-display text-h3 font-semibold text-forest">The Old City</h3>
+          <p class="text-small text-ink-soft">Stone alleys, markets and old houses.</p>
+          <a href="#" class="inline-block pt-2 text-gold font-semibold hover:underline">Explore</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Forms -->
+  <section>
+    <h2 class="font-display text-h2 font-semibold text-forest mb-6">Form fields</h2>
+    <div class="bg-cream-card rounded-card shadow-card p-6 max-w-md space-y-4">
+      <label class="block text-small font-semibold">
+        <span>Full name</span>
+        <input type="text" class="mt-1 w-full rounded-btn border border-cream-line bg-white px-3 py-2 focus:border-forest focus:outline-none">
+      </label>
+      <label class="block text-small font-semibold">
+        <span>Special requests</span>
+        <textarea rows="3" class="mt-1 w-full rounded-btn border border-cream-line bg-white px-3 py-2 focus:border-forest focus:outline-none"></textarea>
+      </label>
+      <p class="text-small text-danger">Error: enter a valid email address.</p>
+    </div>
+  </section>
+
+  <!-- Spacing -->
+  <section>
+    <h2 class="font-display text-h2 font-semibold text-forest mb-6">Layout rules</h2>
+    <ul class="list-disc ps-6 space-y-1 text-ink">
+      <li>Container: max-w-page, px-6, centered.</li>
+      <li>Space between sections: py-16. Inside cards: p-4 or p-6.</li>
+      <li>Images: 4:3 ratio, rounded-card. Dark overlay on hero images.</li>
+      <li>Use only the token names from tailwind.config.js. No raw hex colors or font names inside pages.</li>
+    </ul>
+  </section>
+</main>
+
+<!-- Footer: ONE version for every page -->
+<footer class="bg-forest text-cream mt-8">
+  <div class="max-w-page mx-auto px-6 py-10 flex flex-wrap justify-between gap-6">
+    <div>
+      <p class="font-display text-2xl font-bold">THARA</p>
+      <p class="text-small text-cream/70 mt-1">Every City Holds a Story</p>
+    </div>
+    <p class="text-small text-cream/70 self-end">© 2026 THARA</p>
+  </div>
+</footer>
+</body>
+</html>
